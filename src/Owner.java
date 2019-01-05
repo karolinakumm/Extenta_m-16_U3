@@ -34,12 +34,13 @@ public class Owner {
 	}
 
 	public Car find(String nbr) {
-		for(Car c:cars) {
-			if(c.getRegNbr().equals(nbr)) {
+		for (Car c : cars) {
+			if (c.getRegNbr().equals(nbr)) {
 				return c;
 			}
-			return null;
 		}
+		return null;
+
 	}
 
 }

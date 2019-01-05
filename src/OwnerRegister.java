@@ -15,9 +15,9 @@ public class OwnerRegister {
 		owners.add(k);
 	}
 
-	public Car findOwner(String nr) {
+	public Owner find(String nr) {
 		for (Owner o : owners) {
-			if (getNbr().equals(nr)) {
+			if (o.getNbr().equals(nr)) {
 				return o;
 			}
 		}
@@ -31,11 +31,6 @@ public class OwnerRegister {
 				System.out.println(c.getRegNbr() + " " + c.getBrand());
 			}
 		}
-	}
-
-	private Owner find(String ownerNbr) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public String getOwnerCarBrand(String ownerNbr, String regNbr) {
